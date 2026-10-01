@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+      .qr-card {
+        display: inline-block;
+        padding: 16px; /* Guarantees the quiet zone */
+        background-color: #ffffff; /* Strict light background */
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-card" id="qrcode"></div>
+
+    <script>
+      new QRCode(document.getElementById("qrcode"), {
+        text: "https://cincinsalabim.art",
+        width: 200,
+        height: 200,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+    </script>
+  </body>
+</html>
