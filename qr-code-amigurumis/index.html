@@ -14,61 +14,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #f7f6f2;
+        background-color: #ffeee5;
         font-family:
           -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      }
-
-      .qr-card {
-        padding: 24px;
-        background-color: #fff6ff;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        text-align: center;
-      }
-
-      .caption {
-        margin-top: 16px;
-        font-size: 14px;
-        color: #2b2b2b;
-        line-height: 1.4;
-      }
-
-      .caption a {
-        font-weight: 600;
-        color: #7c424b;
-        text-decoration: none;
-      }
-
-      .caption a:hover {
-        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <div class="qr-card">
       <div id="qrcode"></div>
-
-      <div class="caption">
-        <a
-          href="https://www.instagram.com/amigurumisdasoninha"
-          target="_blank"
-          rel="noopener"
-        >
-          https://www.instagram.com/amigurumisdasoninha
-        </a>
-        <br />
-        Para mais detalhes, escaneie e peça o seu.
-      </div>
     </div>
-
     <script>
       new QRCode(document.getElementById("qrcode"), {
         text: "https://www.instagram.com/amigurumisdasoninha",
         width: 260,
         height: 260,
-        colorDark: "#363636",
-        colorLight: "#FFEFE6",
+        colorDark: "#000",
+        colorLight: "#FFEEE5",
 
         correctLevel: QRCode.CorrectLevel.H,
 
